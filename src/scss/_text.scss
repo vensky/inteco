@@ -20,5 +20,25 @@ p {
 }
 
 ul {
+    @include no-list;
+
+    li {
+        position: relative;
+        padding-left: 24px;
+        margin-bottom: 10px;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 12px;
+            left: 0;
+            width: 16px;
+            height: 2px;
+            background-color: $second-color;
+            font-size: 20px;
+        }
+    }
+
 
 }
