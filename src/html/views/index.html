@@ -2,10 +2,14 @@
 <html lang="ru">
 @@include('../_includes/_head.html')
 <body>
-    @@include('../_includes/_header-main.html')
-    <main>
-
-    </main>
+    <div class="wrapper">
+        @@include('../_includes/_header.html')
+        <main class="main">
+            <div class="container main__container">
+                @@include('../_includes/_about.html')
+            </div>
+        </main>
+    </div>
     <!-- build:js-->
     <script src="js/scripts.js"></script>
     <!-- endbuild-->

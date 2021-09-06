@@ -61,37 +61,35 @@
 </head>
 
 <body>
-    <header class="header-main">
-    <div class="container header-main__container">
-        <button class="nav-btn-open"><span>Меню<span></button>
-        <a class="logo header-main__logo" href="#">
-            <img src="img/logo.svg" alt="Логотип">
-        </a>
-        <form class="header-main__form-search" action="" method="">
-            <fieldset class="search header-main__search">
-                <input class="search__input" type="text" placeholder="Поиск по сайту...">
-                <button class="search__btn" type="submit">Найти</button>
-            </fieldset>
-        </form>
-    </div>
-    <nav class="nav">
-        <div class="nav__wrapper">
-            <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="catalog.html">Каталог</a></li>
-                <li class="nav__item"><a class="nav__link" href="#design">Дизайн</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
-                <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Доставка</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Гарантия</a></li>
-            </ul>
-            <button class="nav-btn-close"></button>
+    <div class="wrapper">
+        <header class="header">
+    <div class="container header__container">
+        <div class="logo header__logo">
+            <img src="img/logo.png" alt="Логотип Интеко">
         </div>
-    </nav>
+        <a class="header__link" href="#" target="_blank" rel="noopener noreferrer">
+            <img src="img/link.png" alt="Открыть ссылку">
+        </a>
+    </div>
 </header>
 
-    <main>
+        <main class="main">
+            <div class="container main__container">
+                <section class="section about">
+    <div class="text about__text">
+        <h2 class="title">Кто мы</h2>
+        <p>«ИНТЕКО» — прогрессивный девелопер с государственным участием.</p>
+        <p>Компания активно участвует в развитии городов: возводит современные жилые комплексы и социально значимые объекты, создает комфортные общественные пространства, формируя новые точки притяжения и современную среду для комфортной жизни.</p>
+        <p>Компания включена в перечень системообразующих организаций строительной отрасли. Президент компании — Александр Николаев является членом Общественного совета при Минстрое РФ.</p>
+    </div>
+    <div class="about__img">
+        <img src="img/about.jpg" alt="Офис Интеко">
+    </div>
+</section>
 
-    </main>
+            </div>
+        </main>
+    </div>
     <!-- build:js-->
     <script src="js/scripts.js"></script>
     <!-- endbuild-->

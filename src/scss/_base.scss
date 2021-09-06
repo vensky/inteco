@@ -1,23 +1,40 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    min-width: 320px;
-    margin: 0;
+    min-width: 300px;
     background-color: #fff;
-    color: #000;
+    color: $main-color;
     font: $font-base;
 }
 
 .container {
-    padding: 0 20px;
+    margin: 0 auto;
+
+    @media (min-width: $tablet) {
+        max-width: 610px;
+    }
+
+    @media (min-width: $laptop) {
+        max-width: 930px;
+    }
+
+    @media (min-width: $desktop) {
+        max-width: 1250px;
+    }
+}
+
+.main {
+    padding: 0 15px 30px 15px;
+
+    &__container {
+        background-color: #f5f0f0;
+        display: flex;
+    }
+}
+
+.section {
+    width: 948px;
+}
+
+.tile {
+    background-color: #fff;
+    padding: 60px 40px;
 }

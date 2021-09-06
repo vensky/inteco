@@ -1,5 +1,9 @@
-@import "normalize";
+@import "_normalize";
 
 @import "_vars";
 @import "_mixins";
+@import "_text";
 @import "_base";
+
+@import "_sections/_header";
+@import "_sections/_about";

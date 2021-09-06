@@ -1,12 +1,11 @@
-$font-sans-serif: 'Gotham Pro', "Segoe UI", roboto, "Helvetica Neue", helvetica, arial, sans-serif;
-$font-serif: 'Playfair Display', georgia, times, "Times New Roman", serif;
+$font-sans-serif: arial, "Segoe UI", roboto, "Helvetica Neue", helvetica, sans-serif;
+$font-base: 16px/24px $font-sans-serif;
 
-$font-base: 400 16px $font-sans-serif;
+$main-color: #1e1e1e;
+$second-color: #4764b0;
 
-$main-color: #000;
+$desktop: 1340px;
+$laptop: 1020px;
+$tablet: 700px;
 
-$laptop: 1171px;
-$tablet: 769px;
-$max: 641px;
-
-$black: #000;
+$border: 2px solid #d2c8c8;
