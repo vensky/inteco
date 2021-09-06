@@ -3,6 +3,10 @@ body {
     background-color: #fff;
     color: $main-color;
     font: $font-base;
+
+    @media (min-width: $laptop) {
+        font-size: 16px;
+    }
 }
 
 .container {
@@ -22,19 +26,26 @@ body {
 }
 
 .main {
-    padding: 0 15px 30px 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+
+    @media (min-width: $tablet) {
+        padding-right: 0;
+        padding-left: 0;
+    }
 
     &__container {
         background-color: #f5f0f0;
-        display: flex;
+        background-color: green;
     }
-}
-
-.section {
-    width: 948px;
 }
 
 .tile {
     background-color: #fff;
-    padding: 60px 40px;
+    padding: 20px;
+
+    @media (min-width: $laptop) {
+        padding: 60px 40px;
+    }
 }
