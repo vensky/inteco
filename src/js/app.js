@@ -2,20 +2,14 @@
 
 @@include('./_components/_swiper-bundle.js');
 
-const swiper = new Swiper('.projects__slider', {
-  // Optional parameters
-
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+const swiper = new Swiper('.projects__swiper', {
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 });
-

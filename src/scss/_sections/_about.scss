@@ -27,49 +27,13 @@
 
         @media (min-width: $desktop) {
             position: absolute;
-            top: 50%;
+            top: 67px;
             left: -300px;
-            overflow: hidden;
             width: 550px;
-            max-height: 440px;
-            transform: translateY(-50%);
         }
-
-        /*        &::after {
-            content: "";
-            display: block;
-            position: absolute;
-            height: 40px;
-            bottom: -40px;
-            right: auto;
-            display: block;
-            left: 20px;
-            border-left: $border;
-
-            @media (min-width: $tablet) {
-                border-left-width: 2px;
-                width: 76%;
-                right: -20px;
-                left: auto;
-            }
-
-            @media (min-width: $desktop) {
-                display: none;
-            }
-        }
-
-        @media (min-width: $desktop) {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            width: 550px;
-            transform: translateY(-50%);
-
-        } */
     }
 
     &__picture {
-
         @media (min-width: $desktop) {
             width: 920px;
             height: 570px;

@@ -1,7 +1,6 @@
 .header {
     padding-top: 24px;
     padding-bottom: 30px;
-    background: red;
 
     @media (min-width: $laptop) {
         padding-top: 40px;
@@ -14,7 +13,6 @@
         justify-content: space-between;
         padding-right: 35px;
         padding-left: 35px;
-        background: yellow;
 
         @media (min-width: $laptop) {
             padding-right: 60px;

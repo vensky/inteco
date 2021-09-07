@@ -26,7 +26,6 @@ body {
 }
 
 .main {
-    height: 800px;
     padding-right: 15px;
     padding-bottom: 30px;
     padding-left: 15px;
@@ -38,7 +37,6 @@ body {
     }
 
     &__container {
-        height: 100%;
         background-color: #f5f0f0;
         background-color: green;
     }
@@ -47,15 +45,17 @@ body {
 .tile {
     position: relative;
     top: -40px;
-    padding-top: 38px;
+    padding-top: 28px;
     padding-right: 15px;
     padding-bottom: 40px;
     padding-left: 20px;
     background-color: #fff;
+    z-index: 2;
+    background-color: yellow;
 
     @media (min-width: $laptop) {
         top: -80px;
-        padding-top: 52px;
+        padding-top: 42px;
         padding-right: 30px;
         padding-bottom: 52px;
         padding-left: 60px;
@@ -70,6 +70,10 @@ body {
     }
 
     &--right {
+        right: 0;
 
+        @media (min-width: $laptop) {
+            /*left: -62px;*/
+        }
     }
 }

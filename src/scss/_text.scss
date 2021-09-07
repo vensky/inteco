@@ -1,5 +1,5 @@
 .title {
-    margin: 0 0 14px;
+    margin: 10px 0 14px;
     color: $second-color;
     font-size: 24px;
     font-weight: bold;
@@ -8,6 +8,16 @@
     @media (min-width: $laptop) {
         margin-bottom: 20px;
         font-size: 32px;
+    }
+}
+
+.subtitle {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+
+    @media (min-width: $laptop) {
+        font-size: 18px;
     }
 }
 
