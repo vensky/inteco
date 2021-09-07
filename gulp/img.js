@@ -9,7 +9,7 @@ module.exports = function img(env='dev') {
     if (env === 'dev') {
         return multipipe(
             src(['src/assets/**/*.{jpg,jpeg,png}', '!src/assets/icons/*.svg']),
-            newer('src/img'),
+            /*newer('src/img'),*/
             webp({ quality: 70 }),
             dest('src/assets'),
             src(['src/assets/**/*.{jpg,jpeg,png,gif,svg,webp}', '!src/assets/icons/**/*.svg']),
