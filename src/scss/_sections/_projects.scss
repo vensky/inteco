@@ -1,7 +1,7 @@
 .projects {
+    position: relative;
     display: flex;
     flex-direction: column;
-    position: relative;
     padding-left: 10px;
 
     @media (min-width: $tablet) {
@@ -10,46 +10,46 @@
 
     &__tile {
         position: relative;
+        z-index: 2;
         top: -40px;
         right: 0;
         padding-top: 30px;
-        padding-left: 32px;
         padding-right: 15px;
         padding-bottom: 30px;
-        z-index: 2;
+        padding-left: 32px;
 
         @media (min-width: $desktop) {
             position: absolute;
             top: 50%;
             right: 0;
             width: 470px;
-            transform: translateY(-50%);
             padding-top: 52px;
-            padding-left: 60px;
             padding-right: 30px;
             padding-bottom: 42px;
+            padding-left: 60px;
+            transform: translateY(-50%);
         }
     }
 
     &__intro,
     &__outro {
-        margin-left: auto;
-        border-left: $border;
-        padding-left: 20px;
         padding-top: 40px;
-        padding-bottom: 26px;
         padding-right: 20px;
+        padding-bottom: 26px;
+        padding-left: 20px;
+        border-left: $border;
+        margin-left: auto;
 
         @media (min-width: $tablet) {
-            border-left-width: 2px;
-            padding-left: 30px;
             width: 76%;
             max-height: 620px;
+            padding-left: 30px;
+            border-left-width: 2px;
         }
 
         @media (min-width: $desktop) {
-            padding-right: 261px;
             width: 950px;
+            padding-right: 261px;
         }
     }
 
@@ -58,21 +58,21 @@
     }
 
     &__slider {
-        margin: 0;
         position: relative;
         left: -10px;
+        margin: 0;
 
         @media (min-width: $tablet) {
-            border-left-width: 2px;
-            padding-left: 30px;
-            /*max-width: 948px;*/
+            /* max-width: 948px; */
             width: 76%;
             max-height: 620px;
+            padding-left: 30px;
+            border-left-width: 2px;
         }
 
         @media (min-width: $desktop) {
-            height: 554px;
             width: 920px;
+            height: 554px;
         }
     }
 }

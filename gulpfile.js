@@ -31,7 +31,7 @@ function watching() {
 }
 
 module.exports.start = parallel(html, css, js, serve, watching);
-module.exports.test = parallel(html, css, js);
+module.exports.test = parallel(html, css);
 module.exports.build = series(clean, html, css, js, img);
 
 module.exports.img = series(img);
