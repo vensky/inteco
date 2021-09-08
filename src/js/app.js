@@ -1,6 +1,6 @@
 'use strict';
 
-@@include('./_components/_swiper-bundle.js');
+@@include('./_components/_swiper.js');
 
 const swiperProjects = new Swiper('.projects__swiper', {
     loop: true,

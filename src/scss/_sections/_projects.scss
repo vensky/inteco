@@ -65,11 +65,14 @@
         @media (min-width: $laptop) {
             padding-top: 56px;
             padding-bottom: 58px;
+            padding-left: 52px;
         }
 
         @media (min-width: $desktop) {
             position: absolute;
             top: 36px;
+            max-height: 440px;
+            overflow: hidden;
         }
     }
 
