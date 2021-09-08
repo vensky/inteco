@@ -28,7 +28,13 @@
             top: 67px;
             left: -300px;
             width: 550px;
+            max-height: 440px;
+            overflow: hidden;
         }
+    }
+
+    &__title {
+        margin-bottom: 15px;
     }
 
     &__picture {
