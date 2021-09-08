@@ -4,13 +4,15 @@
 
 .swiper-buttons {
     position: absolute;
-    width: 20px;
     z-index: 2;
+    width: 20px;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
+
     @include no-btn;
+
     display: none;
     width: 20px;
     height: 6px;
@@ -18,7 +20,6 @@
 
     @media (min-width: $desktop) {
         display: block;
-
     }
 }
 
@@ -31,23 +32,22 @@
 }
 
 .swiper-button-next {
-    background: url(../img/icon-next.png) no-repeat 50% 50%;
     margin-bottom: 5px;
+    background: url(../img/icon-next.png) no-repeat 50% 50%;
 
     &:hover {
         transform: translateX(4px);
     }
 }
 
-
 .swiper-pagination {
     position: absolute;
+    z-index: 2;
     bottom: 40px;
     left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
     display: flex;
     flex-shrink: 0;
+    transform: translateX(-50%);
 
     @media (min-width: $desktop) {
         display: none;
@@ -56,15 +56,13 @@
 
 .swiper-pagination-bullet {
     display: block;
-    height: 6px;
     width: 6px;
-    border-radius: 50%;
-    background-color: #fff;
+    height: 6px;
     margin: 0 5px;
-
+    background-color: #fff;
+    border-radius: 50%;
 
     &-active {
-        transform: scale(1.66)
+        transform: scale(1.66);
     }
-
 }

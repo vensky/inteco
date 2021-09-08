@@ -24,7 +24,7 @@ module.exports = function html(env='dev', version) {
             break;
         case 'test':
             return multipipe(
-                src(srcPath),
+                src('src/*.html'),
                 bemValidator(),
                 validator(),
                 hint(),
@@ -34,6 +34,9 @@ module.exports = function html(env='dev', version) {
         case 'build':
             return multipipe(
                 src(srcPath),
+                plumber(),
+                include(),
+                typograf({ locale: ['ru', 'en-US'] }),
                 replace({
                     css: `css/style.min-v${version}.css`,
                     js: `js/scripts.min-v${version}.js`,

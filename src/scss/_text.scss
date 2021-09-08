@@ -12,9 +12,9 @@
 }
 
 .subtitle {
+    margin: 0;
     font-size: 14px;
     font-weight: normal;
-    margin: 0;
 
     @media (min-width: $laptop) {
         font-size: 18px;
@@ -59,10 +59,9 @@ ul {
 
             @media (min-width: $laptop) {
                 top: 12px;
-            width: 16px;
-            height: 2px;
+                width: 16px;
+                height: 2px;
             }
         }
-
     }
 }

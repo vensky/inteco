@@ -32,26 +32,24 @@ body {
 
     @media (min-width: $tablet) {
         padding-right: 0;
-        padding-left: 0;
         padding-bottom: 114px;
+        padding-left: 0;
     }
 
     &__container {
         background-color: #f5f0f0;
-        background-color: green;
     }
 }
 
 .tile {
     position: relative;
+    z-index: 2;
     top: -40px;
     padding-top: 28px;
     padding-right: 15px;
     padding-bottom: 40px;
     padding-left: 20px;
     background-color: #fff;
-    z-index: 2;
-    background-color: yellow;
 
     @media (min-width: $laptop) {
         top: -80px;
@@ -77,7 +75,7 @@ body {
         right: 0;
 
         @media (min-width: $laptop) {
-            /*left: -62px;*/
+            /* left: -62px; */
         }
     }
 }

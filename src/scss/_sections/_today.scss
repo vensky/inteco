@@ -2,21 +2,21 @@
     padding-left: 10px;
 
     @media (min-width: $laptop) {
-        margin-bottom: 40px;
         padding-left: 30px;
+        margin-bottom: 40px;
     }
 
     &__intro {
         padding-top: 28px;
-        padding-left: 10px;
         padding-right: 20px;
         padding-bottom: 24px;
+        padding-left: 10px;
 
         @media (min-width: $laptop) {
-            padding-left: 32px;
             padding-top: 34px;
             padding-right: 32px;
             padding-bottom: 35px;
+            padding-left: 32px;
         }
     }
 
@@ -27,12 +27,12 @@
 
     &__col {
         display: flex;
-        flex-direction: column;
         width: 46%;
+        flex-direction: column;
 
         @media (min-width: $laptop) {
-            flex-direction: row;
             width: 48%;
+            flex-direction: row;
         }
 
         &:last-child {
@@ -50,23 +50,23 @@
         }
 
         b {
+            display: block;
             font-weight: bold;
             text-transform: uppercase;
-            display: block;
-
         }
 
         strong {
-            font-weight: bold;
-            font-size: 36px;
-            line-height: 36px;
             margin: 10px 0;
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 36px;
 
             @media (min-width: $laptop) {
                 font-size: 48px;
             }
 
-            &+b {
+            & + b {
+
                 @media (min-width: $tablet) {
                     display: inline-block;
                 }
@@ -80,33 +80,33 @@
 
     &__inner {
         position: relative;
-        padding-left: 9px;
-        border-left: $border;
-        border-bottom: $border;
-        padding-bottom: 0;
         padding-top: 16px;
+        padding-bottom: 0;
+        padding-left: 9px;
+        border-bottom: $border;
+        border-left: $border;
 
         @media (min-width: $laptop) {
             padding-left: 30px;
-            border-left-width: 2px;
             border-bottom-width: 2px;
+            border-left-width: 2px;
         }
 
         @media (min-width: $desktop) {
-            margin-left: auto;
             width: 952px;
-            padding-bottom: 50px;
             padding-top: 0;
+            padding-bottom: 50px;
+            margin-left: auto;
         }
 
         &::before {
-            content: "";
             position: absolute;
-            left: -11px;
             top: 0;
-            height: 1px;
+            left: -11px;
             width: 11px;
+            height: 1px;
             background-color: $border-color;
+            content: "";
 
             @media (min-width: $laptop) {
                 left: -32px;
@@ -136,13 +136,12 @@
 
     &__picture {
         position: relative;
-        top: -45px;
         z-index: 1;
+        top: -45px;
         max-height: 570px;
 
         @media (min-width: $desktop) {
             top: 0;
         }
     }
-
 }

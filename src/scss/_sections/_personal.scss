@@ -8,16 +8,16 @@
     }
 
     &__title {
+        padding-right: 20px;
         margin-top: 20px;
         margin-bottom: 54px;
-        padding-right: 20px;
     }
 
     &__subtitle {
-        background: url(../img/divider.png) no-repeat 50% 100%;
-        background-size: 100% 4px;
         padding-bottom: 12px;
         margin-bottom: 20px;
+        background: url(../img/divider.png) no-repeat 50% 100%;
+        background-size: 100% 4px;
 
         @media (min-width: $tablet) {
             background-image: url(../img/divider-desktop.png);
@@ -26,29 +26,26 @@
 
     &__tile {
         top: 0;
-        padding-top: 33px;
         width: 100%;
+        padding-top: 33px;
 
         @media (min-width: $laptop) {
-            padding-left: 48px;
             padding-top: 46px;
             padding-right: 58px;
-
+            padding-left: 48px;
         }
 
         .swiper-buttons {
-            right: 60px;
             top: 49px;
+            right: 60px;
         }
     }
 }
-
 
 .swiper-pagination--personal {
     bottom: 20px;
 
     .swiper-pagination-bullet {
-    background-color: $second-color;
-
+        background-color: $second-color;
     }
 }
