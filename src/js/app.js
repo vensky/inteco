@@ -2,15 +2,15 @@
 
 @@include('./_components/_swiper-bundle.js');
 
-const swiper = new Swiper('.projects__swiper', {
+const swiperProjects = new Swiper('.projects__swiper', {
     loop: true,
     pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-pagination--projects',
         clickable: true,
     },
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next--projects',
+        prevEl: '.swiper-button-prev--projects',
     },
 });
 

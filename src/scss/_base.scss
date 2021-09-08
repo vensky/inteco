@@ -29,11 +29,11 @@ body {
     padding-right: 15px;
     padding-bottom: 30px;
     padding-left: 15px;
-    background-color: orange;
 
     @media (min-width: $tablet) {
         padding-right: 0;
         padding-left: 0;
+        padding-bottom: 114px;
     }
 
     &__container {
@@ -59,6 +59,10 @@ body {
         padding-right: 30px;
         padding-bottom: 52px;
         padding-left: 60px;
+    }
+
+    @media (min-width: $desktop) {
+        width: 470px;
     }
 
     &--left {

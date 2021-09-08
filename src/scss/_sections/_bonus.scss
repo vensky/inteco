@@ -1,8 +1,5 @@
-.projects {
-/*    display: flex;
-    flex-direction: column;*/
+.bonus {
     padding-left: 10px;
-    margin-top: -15px;
 
     @media (min-width: $laptop) {
         padding-left: 30px;
@@ -16,19 +13,51 @@
         position: relative;
         padding-left: 9px;
         border-left: $border;
-        border-bottom: $border;
-        padding-bottom: 40px;
+        padding-bottom: 14px;
+        padding-top: 16px;
 
         @media (min-width: $laptop) {
             padding-left: 30px;
             border-left-width: 2px;
-            border-bottom-width: 2px;
         }
 
         @media (min-width: $desktop) {
             margin-left: auto;
             width: 952px;
-            padding-top: 90px;
+            padding-top: 45px;
+            padding-bottom: 4px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: -11px;
+            top: 0;
+            height: 1px;
+            width: 11px;
+            background-color: $border-color;
+
+            @media (min-width: $laptop) {
+                left: -32px;
+                width: 32px;
+                height: 2px;
+            }
+
+            @media (min-width: $desktop) {
+                left: -298px;
+                width: 298px;
+            }
+        }
+    }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 29px;
+        padding-right: 10px;
+        padding-left: 10px;
+
+        @media (min-width: $desktop) {
+            margin-bottom: 103px;
         }
     }
 
@@ -48,9 +77,10 @@
         }
 
         @media (min-width: $desktop) {
-            position: absolute;
-            top: 36px;
-            width: 470px;
+            margin-left: auto;
+            top: -50px;
+            padding-left: 50px;
+            padding-top: 45px;
         }
     }
 
@@ -67,6 +97,7 @@
         }
 
         @media (min-width: $desktop) {
+            position: absolute;
             left: -330px;
             width: 920px;
             height: 554px;
@@ -80,10 +111,11 @@
     }
 
     .swiper-buttons {
-        position: absolute;
-        right: 59px;
-        bottom: 100px;
-        z-index: 2;
-        width: 68px;
+        left: -270px;
+        bottom: 113px;
     }
+}
+
+.swiper-pagination--bonus {
+    bottom: 50px;
 }

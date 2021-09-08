@@ -3,7 +3,9 @@
 }
 
 .swiper-buttons {
-
+    position: absolute;
+    width: 20px;
+    z-index: 2;
 }
 
 .swiper-button-prev,
@@ -43,8 +45,9 @@
     bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1;
+    z-index: 2;
     display: flex;
+    flex-shrink: 0;
 
     @media (min-width: $desktop) {
         display: none;

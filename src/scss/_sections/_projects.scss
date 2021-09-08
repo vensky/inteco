@@ -1,6 +1,4 @@
 .projects {
-/*    display: flex;
-    flex-direction: column;*/
     padding-left: 10px;
     margin-top: -15px;
 
@@ -72,7 +70,6 @@
         @media (min-width: $desktop) {
             position: absolute;
             top: 36px;
-            width: 470px;
         }
     }
 
@@ -102,10 +99,7 @@
     }
 
     .swiper-buttons {
-        position: absolute;
         right: 59px;
         bottom: 100px;
-        z-index: 2;
-        width: 68px;
     }
 }
